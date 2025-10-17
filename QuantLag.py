@@ -14,7 +14,6 @@ n_ticks = 5000
 initial_price = 100.0
 base_time = 0  
 
-random.seed(42)
 
 
 timestamps = []
@@ -118,3 +117,4 @@ print("High Latency Avg PnL:", round(average(high_pnls), 4))
 print("Avg Slippage:", round(average(slippages), 4))
 print("Trades (Low Latency):", len(low_pnls))
 print("Trades (High Latency):", len(high_pnls))
+
