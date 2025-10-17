@@ -61,7 +61,7 @@ int main() {
     
     vector<string> latency_labels = {"low_latency", "high_latency"};
     vector<int> latencies = {10, 100};
-    vector<vector<tuple<int, int, float, float, float>>> results(2);
+    vector<vector<tuple<int, int, float, float, float>>> results;
 
     auto sim_start = high_resolution_clock::now();
 
@@ -117,4 +117,5 @@ int main() {
     cout << "Trades (High Latency): " << high_pnls.size() << endl;
 
     return 0;
+
 }
